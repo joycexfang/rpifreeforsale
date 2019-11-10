@@ -56,7 +56,7 @@
   #nav.selected {
       font-weight: bold;
   }
-  #row {
+  .row {
       width: 1000px;
       float: left;
       padding-left: 35px;
