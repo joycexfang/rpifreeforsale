@@ -16,7 +16,7 @@
       margin: 0;
   }
   h3 {
-      text-align: left;
+      text-align: right;
   }
   #container {
       font-family: 'Montserrat', sans-serif;
@@ -39,11 +39,11 @@
   #nav {
       background-color: #8b93a6;
       color: white;
-      width: 180px;
+      width: 200px;
       height: 750px;
       float: left;
       font-size: 1em;
-      padding: 30px;
+      padding: 25px;
       padding-top: 20px;
   }
   #nav ul {
@@ -52,6 +52,7 @@
       padding: 0px;
       margin-top: 0;
       line-height: 2em;
+      text-align: right;
   }
   #nav.selected {
       font-weight: bold;
