@@ -86,11 +86,9 @@
       font-weight: bold;
       color: #37404f;
   }
-<<<<<<< HEAD
 
 /* PICTURE LAYOUT */
 
-=======
   #container {
       font-family: 'Roboto Slab', serif;
       background-color: white;
@@ -147,7 +145,7 @@
       font-family: 'Roboto Slab', serif;
       font-size: 20px;
   }
-  
+
   * {
     box-sizing: border-box;
   }
@@ -160,7 +158,9 @@
     width: 1000px;
     float: left;
     padding-left: 35px;
+
   /* Clearfix (clear floats) */
+
   }
   .row::after {
     content: "";
