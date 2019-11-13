@@ -114,4 +114,7 @@
   }
   
   /* PRODUCT DESCRIPTION */
-
+  .productPic{
+    float: left;
+  }
+  
