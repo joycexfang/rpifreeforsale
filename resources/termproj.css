@@ -41,6 +41,7 @@
     font-size: 1em;
     padding: 25px;
     padding-top: 20px;
+    margin-right: 30px;
 }
 #nav ul {
     color: white;
@@ -130,4 +131,3 @@ h3 {
   #productInfo p {
     padding-right: 50px;
   }
-  
