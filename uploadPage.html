@@ -3,17 +3,14 @@
   <head>
     <title>Home</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <link href="resources/termproj.css" rel="stylesheet" type="text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="resources/uploadpage.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <div id="container">
-    </div>
       <div id="header">
           <a href="home.html"><img src="resources/logo.png"></a>
-          <p>Upload Page</p>
           <button type="button">Upload</button>
     </div>
     <p>Please Fill in the Blanks</p>
@@ -24,9 +21,40 @@
       LastName:<br>
       <input type="text" name="lastname"><br>
 
-      <input type="radio" name="Free" value="Free"><label for="Free">Free</label><br>
-      <input type="radio" name="Sale" value="Sale"><label for="Free">Sale</label><br>
+      Choose one<br>
+      <select id="freeOrsale" name="freeOrSale">
+        <option value="free">Free</option>
+        <option value="sale">Sale</option>
+      </select> <br>
+
+      Title: <br>
+      <input type="text" name="title"> <br>
 
       Please upload your picture<br>
-      <input type="file" name="myFile">
+      <input type="file" name="myFile"><br>
+
+      Conditions <br>
+      <select id="conditions" name="conditions">
+        <option value="New">New</option>
+        <option value="Used-likenew">Used - like new</option>
+        <option value="used-good">Used - good</option>
+      </select> <br>
+
+      Categories (Please check all the boxes the item applies to)
+      <fieldset>
+        <input type="checkbox" name="cate1" value="Textbooks" /> Textbooks
+        <input type="checkbox" name="cate2" value="Electronics" /> Electronics
+        <input type="checkbox" name="cate3" value="Clothing&Shoes" /> Clothing & Shoes
+        <input type="checkbox" name="cate4" value="Games" /> Games
+        <input type="checkbox" name="cate5" value="Furniture" /> Furniture
+        <input type="checkbox" name="cate6" value="Kitchen" /> Kitchen
+        <input type="checkbox" name="cate7" value="Sports&Outdoors" /> Sports & Outdoors
+        <input type="checkbox" name="cate8" value="Beauty&Health" /> Beauty & Health
+        <input type="checkbox" name="cate9" value="Others" /> Others
+      </fieldset> <br>
+
+      Descriptions: <br>
+      <textarea id="description" name="description" placeholder="Describe your item.. " style="height:200px"></textarea>
+
     </form>
+  </div>
