@@ -114,7 +114,15 @@
   }
   
   /* PRODUCT DESCRIPTION */
-  .productPic{
+  #productDescrip {
+      padding-left: 20px;
+  }
+  #productPic {
     float: left;
+    padding: 20px;
+    margin-left: 15px;
+  }
+  #productDescrip h1 {
+    padding-left: 20px;
   }
   
