@@ -1,0 +1,39 @@
+/* HEADER */
+
+#header {
+    background-color: #c9cfd3;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 90px;
+}
+#header img {
+    height: 70px;
+    float: left;
+}
+#header button {
+    height: 30px;
+    float: right;
+    background-color: #8b93a6;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+}
+#container {
+    font-family: 'Roboto Slab', serif;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* FOOTER */
+
+#footer {
+    clear: both;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #c9cfd3;
+    color: white;
+    text-align: right;
+}
