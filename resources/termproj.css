@@ -125,7 +125,7 @@
       margin-top: 0;
       line-height: 2em;
       text-align: left;
-  
+
   }
   #footer {
       clear: both;
@@ -147,7 +147,7 @@
       font-family: 'Roboto Slab', serif;
       font-size: 20px;
   }
->>>>>>> a4dfb52e7bdbe050109e76f746cdce281a193927
+  
   * {
     box-sizing: border-box;
   }
