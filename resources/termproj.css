@@ -86,9 +86,68 @@
       font-weight: bold;
       color: #37404f;
   }
+<<<<<<< HEAD
 
 /* PICTURE LAYOUT */
 
+=======
+  #container {
+      font-family: 'Roboto Slab', serif;
+      background-color: white;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  #header {
+      background-color: #c9cfd3;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-bottom: 20px;
+      height: 90px;
+  }
+  #content {
+      padding: 10px;
+  }
+  #nav {
+      background-color: #8b93a6;
+      color: white;
+      width: 200px;
+      height: 750px;
+      float: left;
+      font-size: 1em;
+      padding: 20px;
+      padding-top: 20px;
+  }
+  #nav ul {
+      color: white;
+      list-style-type: none;
+      padding: 0px;
+      margin-top: 0;
+      line-height: 2em;
+      text-align: left;
+  
+  }
+  #footer {
+      clear: both;
+      padding: 10px;
+      margin-top: 20px;
+      background-color: #c9cfd3;
+      color: white;
+      text-align: right;
+  }
+  #header img {
+      height: 70px;
+      float: left;
+  }
+  #header button {
+      height: 30px;
+      float: right;
+      background-color: #8b93a6;
+      color: white;
+      font-family: 'Roboto Slab', serif;
+      font-size: 20px;
+  }
+>>>>>>> a4dfb52e7bdbe050109e76f746cdce281a193927
   * {
     box-sizing: border-box;
   }
