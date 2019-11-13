@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="resources/termproj.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="Contact.js"></script>
+  </head>
+
+  <body>
+    <div id="container">
+    </div>
+      <div id="header">
+          <a href="home.html"><img src="resources/logo.png"></a>
+          <button type="button">Upload</button>
+    </div>
+    <div id="content">
+      <div id="nav">
+        <h3>Price</h3>
+        <ul>
+          <li><a href="#" class="selected">Free</a></li>
+          <li><a href="#">Sale</a></li>
+        </ul>
+        <h3>Categories</h3>
+        <ul>
+          <li><a href="#">Textbooks</a></li>
+          <li><a href="#">Electronics</a></li>
+          <li><a href="#">Clothing & Shoes</a></li>
+          <li><a href="#">Games</a></li>
+          <li><a href="#">Furniture</a></li>
+          <li><a href="#">Kitchen</a></li>
+          <li><a href="#">Sports & Outdoors</a></li>
+          <li><a href="#">Beauty & Health</a></li>
+          <li><a href="#">Others</a></li>
+        </ul>
+      </div>
+      </div>
+    
+    <div class="row">
+       <form id="addForm" name="addForm" action="#" method="post" onsubmit="return validate(this);"> 
+        <h1>Contact</h1>
+        <label for="Name">Name:</label>
+        <div><input type="text" size="60" value="" name="Name" id="Name"/></div>
+        <label for="Mail">RPI Email</label>
+        <div><input type="text" size="60" value="" name="Mail" id="Mail"/></div>
+        <label for="Message">Message</label>
+        <div><textarea onclick="clearComment(this);" rows="10" cols="30" name="Message" id="Message">Please enter your message</textarea></div>
+        <input type="submit" value="Submit" id="save" name="save"/> 
+        </form>
+    </div>
+    <div id="footer">
+      Copyright &copy; 2019
+    </div>
+  </body>
+
+</html>
