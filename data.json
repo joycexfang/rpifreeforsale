@@ -1,90 +1,10 @@
 {
-    "Item": [
+    "menuItem": [
         {
             "title": "Logitech M325C Mouse",
             "cost": "$11",
-            "picture": "resources/mouse.jpg",
-            "desc": "This Logitech mouse has been used for only 3 months. It is in good condition. I am willing to negotiate a price. Contact me if interested!",
-            "categories": "Electronics",
-            "condition": "Used - Good",
-            "nameSeller": "Ilhwan Song",
-            "price": "Sale"
-        },
-        {
-            "title": "Logitech M325C Mouse",
-            "cost": "$11",
-            "picture": "resources/mouse.jpg",
-            "desc": "This Logitech mouse has been used for only 3 months. It is in good condition. I am willing to negotiate a price. Contact me if interested!",
-            "categories": "Electronics",
-            "condition": "Used - Good",
-            "nameSeller": "Ilhwan Song",
-            "price": "Sale"
-        },
-        {
-            "title": "Logitech M325C Mouse",
-            "cost": "$11",
-            "picture": "resources/mouse.jpg",
-            "desc": "This Logitech mouse has been used for only 3 months. It is in good condition. I am willing to negotiate a price. Contact me if interested!",
-            "categories": "Electronics",
-            "condition": "Used - Good",
-            "nameSeller": "Ilhwan Song",
-            "price": "Sale"
-        },
-        {
-            "title": "Logitech M325C Mouse",
-            "cost": "$11",
-            "picture": "resources/mouse.jpg",
-            "desc": "This Logitech mouse has been used for only 3 months. It is in good condition. I am willing to negotiate a price. Contact me if interested!",
-            "categories": "Electronics",
-            "condition": "Used - Good",
-            "nameSeller": "Ilhwan Song",
-            "price": "Sale"
-        },
-        {   
-            "title": "Logitech M325C Mouse",
-            "cost": "$11",
-            "picture": "resources/mouse.jpg",
-            "desc": "This Logitech mouse has been used for only 3 months. It is in good condition. I am willing to negotiate a price. Contact me if interested!",
-            "categories": "Electronics",
-            "condition": "Used - Good",
-            "nameSeller": "Ilhwan Song",
-            "price": "Sale"
-        },
-        {
-            "title": "Logitech M325C Mouse",
-            "cost": "$11",
-            "picture": "resources/mouse.jpg",
-            "desc": "This Logitech mouse has been used for only 3 months. It is in good condition. I am willing to negotiate a price. Contact me if interested!",
-            "categories": "Electronics",
-            "condition": "Used - Good",
-            "nameSeller": "Ilhwan Song",
-            "price": "Sale"
-        },
-        {
-            "title": "Logitech M325C Mouse",
-            "cost": "$11",
-            "picture": "resources/mouse.jpg",
-            "desc": "This Logitech mouse has been used for only 3 months. It is in good condition. I am willing to negotiate a price. Contact me if interested!",
-            "categories": "Electronics",
-            "condition": "Used - Good",
-            "nameSeller": "Ilhwan Song",
-            "price": "Sale"
-        },
-        {
-            "title": "Logitech M325C Mouse",
-            "cost": "$11",
-            "picture": "resources/mouse.jpg",
-            "desc": "This Logitech mouse has been used for only 3 months. It is in good condition. I am willing to negotiate a price. Contact me if interested!",
-            "categories": "Electronics",
-            "condition": "Used - Good",
-            "nameSeller": "Ilhwan Song",
-            "price": "Sale"
-        },
-        {
-            "title": "Logitech M325C Mouse",
-            "cost": "$11",
-            "picture": "resources/mouse.jpg",
-            "desc": "This Logitech mouse has been used for only 3 months. It is in good condition. I am willing to negotiate a price. Contact me if interested!",
+            "picture": "mouse.jpg",
+            "descrip": "This Logitech mouse has been used for only 3 months. It is in good condition. I am willing to negotiate a price. Contact me if interested!",
             "categories": "Electronics",
             "condition": "Used - Good",
             "nameSeller": "Ilhwan Song",
