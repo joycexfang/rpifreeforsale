@@ -1,7 +1,13 @@
 //This will validate the input data
 
 function checkboxvalidate() {
-  var group =
+  var group = document.uploadform.categories;
+  if (group[i].checked)
+  break;
+  }
+  if (i==group.length)
+  alertmessage += "No Checkbox is checked \n";
+  }
 }
 
 function validation() {
@@ -27,3 +33,4 @@ function validation() {
   if (description == "") {
     alertmessage += "You must enter a description \n";
   }
+}

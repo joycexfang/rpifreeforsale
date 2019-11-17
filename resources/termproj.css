@@ -123,7 +123,7 @@ h3 {
     float: left;
     padding-right: 30px;
     padding-top: 20px;
-    
+
   }
   #productInfo p {
     padding-right: 50px;
@@ -141,12 +141,14 @@ h3 {
     resize: vertical;
   }
 
-  /*
   input[type=submit] {
-    background-color: #4CAF50;
+    background-color: #8b93a6;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin-top: 15px;
+    margin-right: 50px;
+    float:right;
   }
