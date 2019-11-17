@@ -121,8 +121,9 @@ h3 {
   }
   #productPic {
     float: left;
-    padding: 20px;
-    margin-left: 15px;
+    padding-right: 30px;
+    padding-top: 20px;
+    
   }
   #productInfo p {
     padding-right: 50px;
