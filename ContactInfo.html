@@ -14,7 +14,7 @@
     </div>
       <div id="header">
           <a href="home.html"><img src="resources/logo.png"></a>
-          <button type="button">Upload</button>
+          <a href="uploadPage.html"><button type="button">Upload</button></a>
     </div>
     <div id="content">
       <div id="nav">
@@ -37,17 +37,17 @@
         </ul>
       </div>
       </div>
-    
+
     <div class="row">
-       <form id="addForm" name="addForm" action="#" method="post" onsubmit="return validate(this);"> 
+       <form id="addForm" name="addForm" action="#" method="post" onsubmit="return validate(this);">
         <h1>Contact</h1>
         <label for="Name">Name:</label>
         <div><input type="text" size="60" value="" name="Name" id="Name"/></div>
         <label for="Mail">RPI Email</label>
-        <div><input type="text" size="60" value="" name="Mail" id="Mail"/></div>
+        <div><input type="text" size="60" value="" name="Mail" id="Mail" placeholder="@rpi.edu"/></div>
         <label for="Message">Message</label>
         <div><textarea onclick="clearComment(this);" rows="10" cols="30" name="Message" id="Message">Please enter your message</textarea></div>
-        <input type="submit" value="Submit" id="save" name="save"/> 
+        <input type="submit" value="Submit" id="save" name="save"/>
         </form>
     </div>
     <div id="footer">
