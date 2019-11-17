@@ -3,36 +3,61 @@
   <head>
     <title>Home</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <link href="resources/uploadpage.css" rel="stylesheet" type="text/css"/>
+    <link href="resources/termproj.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <div id="container">
+    </div>
       <div id="header">
           <a href="home.html"><img src="resources/logo.png"></a>
           <button type="button">Upload</button>
     </div>
+    <div id="content">
+      <div id="nav">
+        <h3>Price</h3>
+        <ul>
+          <li><a href="#" class="selected">Free</a></li>
+          <li><a href="#">Sale</a></li>
+        </ul>
+        <h3>Categories</h3>
+        <ul>
+          <li><a href="#">Textbooks</a></li>
+          <li><a href="#">Electronics</a></li>
+          <li><a href="#">Clothing & Shoes</a></li>
+          <li><a href="#">Games</a></li>
+          <li><a href="#">Furniture</a></li>
+          <li><a href="#">Kitchen</a></li>
+          <li><a href="#">Sports & Outdoors</a></li>
+          <li><a href="#">Beauty & Health</a></li>
+          <li><a href="#">Others</a></li>
+        </ul>
+      </div>
+      </div>
+
     <p>Please Fill in the Blanks</p>
 
     <form class="fill" method="post">
-      FirstName:<br>
-      <input type = "text" name="firstname"><br>
-      LastName:<br>
-      <input type="text" name="lastname"><br>
-
+      <label for="fname">FirstName:</label>
+      <input type = "text" id="fname" name="firstname" value="" placeholder="Your first name">
+      <br>
+      <label for="lname">LastName:</label>
+      <input type = "text" id="lname" name="lastname" value="" placeholder="Your last name">
+      <br>
       Choose one<br>
       <select id="freeOrsale" name="freeOrSale">
         <option value="free">Free</option>
         <option value="sale">Sale</option>
-      </select> <br>
+      </select><br>
 
-      Title: <br>
-      <input type="text" name="title"> <br>
+      <label for="title">Title:</label> <br>
+      <input type = "text" id="title" name="title" value="" placeholder="Title of your item"><br>
 
       Please upload your picture<br>
-      <input type="file" name="myFile"><br>
+      <input type="file" name="myFile">
 
+      <br><br>
       Conditions <br>
       <select id="conditions" name="conditions">
         <option value="New">New</option>
@@ -54,7 +79,13 @@
       </fieldset> <br>
 
       Descriptions: <br>
-      <textarea id="description" name="description" placeholder="Describe your item.. " style="height:200px"></textarea>
+      <textarea id="description" name="description" placeholder="Describe your item.. " value="" style="height:200px"></textarea>
 
     </form>
+    </div>
+  <div id="footer">
+    Copyright &copy; 2019
   </div>
+  </body>
+
+</html>
