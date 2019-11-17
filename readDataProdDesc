@@ -1,7 +1,7 @@
 $(document).ready(function() {	
         $.ajax({
               type: "GET",
-              url: "rpifreeforsale/data.json",
+              url: "data.json",
               dataType: "json",
               success: function(responseData, status){
                 var output = "";  
