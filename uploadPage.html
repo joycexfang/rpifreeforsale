@@ -4,6 +4,7 @@
     <title>UploadPage</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link href="resources/termproj.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="resources/JavaScript/uploadpage"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
   </head>
 
@@ -38,13 +39,11 @@
 
     <p>Please Fill in the Blanks</p>
 
-    <form class="fill" method="post">
-      <label for="fname">FirstName:</label>
-      <input type = "text" id="fname" name="firstname" value="" placeholder="Your first name">
+    <form name="uploadform" class="fill" method="post">
+      <label for="fname">Full Name:</label><br>
+      <input type = "text" id="fname" name="fullname" value="" placeholder="Your Full Name">
       <br>
-      <label for="lname">LastName:</label>
-      <input type = "text" id="lname" name="lastname" value="" placeholder="Your last name">
-      <br>
+
       Choose one<br>
       <select id="freeOrsale" name="freeOrSale">
         <option value="free">Free</option>
@@ -53,6 +52,9 @@
 
       <label for="title">Title:</label> <br>
       <input type = "text" id="title" name="title" value="" placeholder="Title of your item"><br>
+
+      <label for="price">Price</label> <br>
+      <input type ="number" id="price" name ="price" value="" placeholder="$"><br>
 
       Please upload your picture<br>
       <input type="file" name="myFile">
@@ -67,15 +69,15 @@
 
       Categories (Please check all the boxes the item applies to)
       <fieldset>
-        <input type="checkbox" name="cate1" value="Textbooks" /> Textbooks
-        <input type="checkbox" name="cate2" value="Electronics" /> Electronics
-        <input type="checkbox" name="cate3" value="Clothing&Shoes" /> Clothing & Shoes
-        <input type="checkbox" name="cate4" value="Games" /> Games
-        <input type="checkbox" name="cate5" value="Furniture" /> Furniture
-        <input type="checkbox" name="cate6" value="Kitchen" /> Kitchen
-        <input type="checkbox" name="cate7" value="Sports&Outdoors" /> Sports & Outdoors
-        <input type="checkbox" name="cate8" value="Beauty&Health" /> Beauty & Health
-        <input type="checkbox" name="cate9" value="Others" /> Others
+        <input type="checkbox" name="categories" value="Textbooks" /> Textbooks
+        <input type="checkbox" name="categories" value="Electronics" /> Electronics
+        <input type="checkbox" name="categories" value="Clothing&Shoes" /> Clothing & Shoes
+        <input type="checkbox" name="categories" value="Games" /> Games
+        <input type="checkbox" name="categories" value="Furniture" /> Furniture
+        <input type="checkbox" name="categories" value="Kitchen" /> Kitchen
+        <input type="checkbox" name="categories" value="Sports&Outdoors" /> Sports & Outdoors
+        <input type="checkbox" name="categories" value="Beauty&Health" /> Beauty & Health
+        <input type="checkbox" name="categories" value="Others" /> Others
       </fieldset> <br>
 
       Descriptions: <br>
