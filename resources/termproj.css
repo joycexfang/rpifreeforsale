@@ -41,7 +41,7 @@
   font-size: 1em;
   padding: 25px;
   padding-top: 20px;
-  margin-right: 30px;
+  margin-right: 50px;
 }
 #nav ul {
   color: white;
@@ -101,7 +101,7 @@ h3 {
 .row {
   width: 1000px;
   float: left;
-  padding-left: 35px;
+  padding-left: 0px;
 
 }
 .row::after {
@@ -116,7 +116,18 @@ figcaption {
 }
 
 /* PRODUCT DESCRIPTION */
-#productDescrip {
+h2 {
+  color: #63B53E;
+  font-size: 2em;
+  margin-right: 50px;
+  float: right;
+}
+h4 {
+  font-size: 2em;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+.productDescrip {
   padding-left: 20px;
 }
 #productPic {
