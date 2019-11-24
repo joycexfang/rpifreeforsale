@@ -5,6 +5,10 @@ body
   margin:0 auto;
   padding:0px;
 }
+h2 {
+  font-family: sans-serif;
+  font-weight: lighter;
+}
 img{
   text-align: center;
   max-height: 270px; 
