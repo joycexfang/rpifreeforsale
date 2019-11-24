@@ -123,12 +123,17 @@ h3 {
     float: left;
     padding-right: 30px;
     padding-top: 20px;
-
   }
   #productInfo p {
     padding-right: 50px;
   }
-
+  #productInfo button {
+    height: 30px;
+    background-color: #8b93a6;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+  }
   /* Upload Page */
   input[type=text], select, textarea {
     width: 300px;
