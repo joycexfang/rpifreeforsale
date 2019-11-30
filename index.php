@@ -49,7 +49,7 @@
             <div class="column">
                 <a href="productDescription.php"><img style="width:100%;"src="images/'.$record['myFile'].'"></a>
                 <a href="productDescription.php"><figcaption>$'.$record['price'].'<br>'.$record['title'].'</figcaption></a>
-            </div>';
+            </div></div>';
     }
     
     $result->free();
@@ -60,6 +60,10 @@
   
 ?>
 </table>
+  
+    </div>
+  </body>
+</html>
 
 <?php include('includes/foot.inc.php'); 
   // footer info and closing tags

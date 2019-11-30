@@ -150,17 +150,17 @@
     <div class="formData">
       
       <?php
-      // preset values
-       $fullName='Grace';
-       $email='grace@1';
-       $freeOrSale='Sale';
-       $title='Apple Charger';
-       $price=20.00;
-       $myFile='resources/mouse.jpg';
-       $condition='New';
-       $categories='Electronics';
-       $detail='This calculator is brand new, contact me if interested.'
-       ?>
+      //  preset values
+      //  $fullName='Grace';
+      //  $email='grace@1';
+      //  $freeOrSale='Sale';
+      //  $title='Apple Charger';
+      //  $price=20.00;
+      //  $myFile='resources/mouse.jpg';
+      //  $condition='New';
+      //  $categories='Electronics';
+      //  $detail='This calculator is brand new, contact me if interested.'
+      //  ?>
 
       <label class="field" for="fullName">Full Name:</label>
       <div class="value"><input type="text" size="60" value="<?php echo $fullName; ?>" name="fullName" id="fullName"/></div>
