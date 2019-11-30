@@ -5,10 +5,10 @@ function checkboxvalidate() {
   if (group[i].checked)
   break;
   }
-  if (i==group.length)
+  if (i==group.length) {
   alertmessage += "No Checkbox is checked \n";
   }
-}
+
 
 function validation() {
   var fname = document.getElementById("fname").value;
