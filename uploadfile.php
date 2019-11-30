@@ -2,7 +2,6 @@
    if(isset($_FILES['myFile'])){
       $errors= array();
       $file_name = $_FILES['myFile']['name'];
-      echo 'line 5 uploadfile.php file name '. $_FILES['myFile']['name'];
       $file_size =$_FILES['myFile']['size'];
       $file_tmp =$_FILES['myFile']['tmp_name'];
       $file_type=$_FILES['myFile']['type'];

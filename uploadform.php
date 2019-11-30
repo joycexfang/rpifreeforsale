@@ -58,9 +58,7 @@
       $freeOrSale = htmlspecialchars(trim($_POST["freeOrSale"]));
       $title = htmlspecialchars(trim($_POST["title"]));
       $price = htmlspecialchars(trim($_POST["price"]));  
-      $myFile = htmlspecialchars(trim($_POST["myFile"]));
-      echo 'line 61 file echo ' .  $myFile;
-      echo 'line 62 file echo ' .  $myFileForDb;
+      $myFile = htmlspecialchars(trim($_FILES["myFile"]['name']));
       $conditions = htmlspecialchars(trim($_POST["conditions"]));
       $categories = htmlspecialchars(trim($_POST["categories"]));
       $detail = htmlspecialchars(trim($_POST["detail"]));
@@ -124,8 +122,7 @@
         $freeOrSaleForDb = trim($_POST["freeOrSale"]);
         $titleForDb = trim($_POST["title"]);
         $priceForDb = trim($_POST["price"]);
-        $myFileForDb = trim($_POST["myFile"]);
-        echo 'line 126 file echo ' .  $myFileForDb;
+        $myFileForDb = trim($_FILES["myFile"]['name']);
         $conditionsForDb = trim($_POST["conditions"]);
         $categoriesForDb = trim($_POST["categories"]);
         $detailForDb = trim($_POST["detail"]);
@@ -137,7 +134,7 @@
         $statement = $db->prepare($insQuery);
         
         // bind our variables to the question marks
-        $statement->bind_param("ssssibsss",$fullNameForDb,$emailForDb,$freeOrSaleForDb,$titleForDb,$priceForDb,$myFileForDb,$conditionsForDb,$categoriesForDb,$detailForDb);
+        $statement->bind_param("ssssissss",$fullNameForDb,$emailForDb,$freeOrSaleForDb,$titleForDb,$priceForDb,$myFileForDb,$conditionsForDb,$categoriesForDb,$detailForDb);
       
         // make it so:
         $statement->execute();
@@ -178,7 +175,7 @@
       
       <label class="field" for="freeOrSale">Free or Sale:</label>
       <div class="value"><input type="radio" name="freeOrSale" value="free" checked> Free<br>
-                         <input type="radio" name="freeOrSale" value="sale"> Sale<br><?php echo $freeOrSale; ?></div>
+                         <input type="radio" name="freeOrSale" value="sale"> Sale<br><?php $freeOrSale; ?></div>
       
       <label class="field" for="title">Title:</label>
       <div class="value"><input type="text" size="60" value="<?php echo $title; ?>" name="title" id="title"/></div>
@@ -197,7 +194,7 @@
                             <li><input type="radio" name="conditions" value="new" checked> New</li>
                             <li><input type="radio" name="conditions" value="likenew"> Used - Like New</li>
                             <li><input type="radio" name="conditions" value="good"> Used - Good</li>
-                         </ul><?php echo $conditions; ?></div>
+                         </ul><?php $conditions; ?></div>
                         
       <label class="field" for="categories">Categories (Please check all the boxes the item applies to):</label>
       <div class="value">
@@ -211,7 +208,7 @@
         <li><input type="radio" name="categories" value="Sports&Outdoors" /> Sports & Outdoors</li>
         <li><input type="radio" name="categories" value="Beauty&Health" /> Beauty & Health</li>
         <li><input type="radio" name="categories" value="Others" /> Others</li>
-      </ul><?php echo $freeOrSale; ?></div>
+      </ul><?php $categories; ?></div>
 
       <label class="field" for="detail">Describe Your Item:</label>
       <div class="value"><input style="width:800px" type="text" size="60" value="<?php echo $detail; ?>" name="detail" id="detail"/></div>
