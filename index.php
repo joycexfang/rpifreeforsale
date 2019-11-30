@@ -45,19 +45,11 @@
     $last_title = '';
     for ($i=0; $i < $numRecords; $i++) {
       $record = $result->fetch_assoc();
-      if ($i % 4 == 0) {
-        echo "\n".'<tr id="movie-' . '"><td>';
-      } else {
-        echo "\n".'<tr class="odd" id="movie-' . '"><td>';
-      }
-      echo '<div class="row">';
-        echo '<div class="column">
+      echo '<div class="row">
+            <div class="column">
                 <a href="productDescription.php"><img style="width:100%;"src="images/'.$record['myFile'].'"></a>
                 <a href="productDescription.php"><figcaption>$'.$record['price'].'<br>'.$record['title'].'</figcaption></a>
             </div>';
-        
-        echo '</td><td>';
-        echo '</td></tr>';
       // Uncomment the following three lines to see the underlying 
       // associative array for each record.
       /*echo '<tr><td colspan="3" style="white-space: pre;">';
