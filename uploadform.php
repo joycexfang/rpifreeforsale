@@ -1,6 +1,5 @@
 <?php 
   include('includes/nav.inc.php'); // include the nav bar
-  include('includes/autofillform.php')
 ?>
 <html>
   <head>
