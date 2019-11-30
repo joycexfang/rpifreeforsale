@@ -50,11 +50,6 @@
                 <a href="productDescription.php"><img style="width:100%;"src="images/'.$record['myFile'].'"></a>
                 <a href="productDescription.php"><figcaption>$'.$record['price'].'<br>'.$record['title'].'</figcaption></a>
             </div>';
-      // Uncomment the following three lines to see the underlying 
-      // associative array for each record.
-      /*echo '<tr><td colspan="3" style="white-space: pre;">';
-      print_r($record);
-      echo '</td></tr>';*/
     }
     
     $result->free();

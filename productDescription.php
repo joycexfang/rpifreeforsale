@@ -45,22 +45,17 @@
     $last_title = '';
     for ($i=0; $i < $numRecords; $i++) {
       $record = $result->fetch_assoc();
-      if ($i % 4 == 0) {
-        echo "\n".'<tr id="movie-' . '"><td>';
-      } else {
-        echo "\n".'<tr class="odd" id="movie-' . '"><td>';
-      }
         echo '<div class="productDescrip"></div>
                 <h1>'.$record['title'].'</h1>
                 <h2>Price: $'.$record['price'].'</h2>
                 <img id="productPic" src="images/'.$record['myFile'].'" style="width:30%">
               <div id="productInfo">
-        <h4>About this Item</h4>
-        <p>'.$record['detail'].'</p>
-        <p>Category/Categories: '.$record['categories'].'</p>
-        <p>Condition: '.$record['conditions'].'</p>
-            <a href="ContactInfo.html"><button type="button">Contact Seller</button></a>
-    </div>';
+              <h4>About this Item</h4>
+                  <p>'.$record['detail'].'</p>
+                  <p>Category/Categories: '.$record['categories'].'</p>
+                  <p>Condition: '.$record['conditions'].'</p>
+                      <a href="ContactInfo.html"><button type="button">Contact Seller</button></a>
+              </div>';
     }
     
     $result->free();
