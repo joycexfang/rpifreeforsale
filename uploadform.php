@@ -1,14 +1,10 @@
 <?php 
   include('includes/nav.inc.php'); // include the nav bar
+  include('includes/head.inc.php') // include the head
 ?>
 <html>
   <head>
-    <title>Forms with PHP - ITWS</title> 
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
-    <script type="text/javascript" src="resources/jquery-1.4.3.min.js"></script>
-    <script type="text/javascript" src="resources/JavaScript/uploadpage.js"></script>   
-    <link href="resources/termproj.css" rel="stylesheet" type="text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <title>Sell Your Stuff</title> 
   </head>
   <body>
     <div id="bodyBlock">

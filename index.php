@@ -1,62 +1,79 @@
 <?php 
   include('includes/nav.inc.php'); // include the nav bar
+  include('includes/head.inc.php') // include the head
 ?>
+
 <html>
   <head>
     <title>Homepage</title> 
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
-    <script type="text/javascript" src="resources/jquery-1.4.3.min.js"></script>
-    <link href="resources/termproj.css" rel="stylesheet" type="text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
-  </head>
+     </head>
   <body>
     <div id="bodyBlock">
-    <body>
-    <div id="container">
-    </div>
 
-    <div class="row">
+<?php
+  // We'll need a database connection both for retrieving records and for 
+  // inserting them.  Let's get it up front and use it for both processes
+  // to avoid opening the connection twice.  If we make a good connection, 
+  // we'll change the $dbOk flag.
+  $dbOk = false;
+  
+  /* Create a new database connection object, passing in the host, username,
+     password, and database to use. The "@" suppresses errors. */
+  @ $db = new mysqli('localhost', 'root', 'root', 'rpifreeforsale');
+  
+  if ($db->connect_error) {
+    echo '<div class="messages">Could not connect to the database. Error: ';
+    echo $db->connect_errno . ' - ' . $db->connect_error . '</div>';
+  } else {
+    $dbOk = true; 
+  }
 
-        <div class="column">
-            <a href="productDescription.html"><img src="resources/mouse.jpg" alt="Mouse" style="width:100%"></a>
-            <a href="productDescription.html"><figcaption>$11<br>Logitech M325C Mouse</figcaption></a>
-        </div>
-        <div class="column">
-            <img src="resources/tape.jpg" alt="Tape" style="width:100%">
-            <figcaption>$3<br>Scotch Tape Dispenser</figcaption>
-        </div>
-        <div class="column">
-            <img src="resources/gloves.jpg" alt="Gloves" style="width:100%">
-            <figcaption>$4<br>Head Women's Gloves</figcaption>
-        </div>
-        <div class="column">
-            <img src="resources/calculator.jpg" alt="Calculator" style="width:100%">
-            <figcaption>$90<br>Pink TI-84 Plus CE</figcaption>
-        </div>
-        </div>
-      <div class="row">
-        <div class="column">
-            <img src="resources/eyeshadow.jpg" alt="Chair" style="width:100%">
-            <figcaption>$2<br>Lancome Eyeshadow</figcaption>
-        </div>
-        <div class="column">
-            <img src="resources/applecharger.jpg" alt="Charger" style="width:100%">
-            <figcaption>$3<br>USB-C Apple Charger</figcaption>
-        </div>
-        <div class="column">
-            <img src="resources/hairdryer.jpg" alt="Hair Dryer" style="width:100%">
-            <figcaption>$12<br>Conair Hair Dryer</figcaption>
-        </div>
-        <div class="column">
-            <img src="resources/chair.jpg" alt="Chair" style="width:100%">
-            <figcaption>$50<br>RPI Union Chair</figcaption>
-        </div>
-        </div>
+  ?>
 
-    </div>
-    <div id="footer">
-      Copyright &copy; 2019
-    </div>
-  </body>
+<table id="itemListing">
+<?php
+  if ($dbOk) {
 
-</html>
+    // $query = "SELECT movies.title, actors.last_name, actors.first_names FROM movies, actors, relationship WHERE relationship.movieid = movies.movieid AND relationship.actorid = actors.actorid order by title";
+    $query = "SELECT fullName, email, freeOrSale, title, price, myFile, conditions, categories, detail FROM items";
+
+    $result = $db->query($query);
+    $numRecords = $result->num_rows;
+    
+    // echo '<tr><th>Movie Title:</th><th>Actors:</th><th></th></tr>';
+
+    $last_title = '';
+    for ($i=0; $i < $numRecords; $i++) {
+      $record = $result->fetch_assoc();
+      if ($i % 4 == 0) {
+        echo "\n".'<tr id="movie-' . '"><td>';
+      } else {
+        echo "\n".'<tr class="odd" id="movie-' . '"><td>';
+      }
+      echo '<div class="row">';
+        echo '<div class="column">
+                <a href="productDescription.php"><img style="width:100%;"src="images/'.$record['myFile'].'"></a>
+                <a href="productDescription.php"><figcaption>$'.$record['price'].'<br>'.$record['title'].'</figcaption></a>
+            </div>';
+        
+        echo '</td><td>';
+        echo '</td></tr>';
+      // Uncomment the following three lines to see the underlying 
+      // associative array for each record.
+      /*echo '<tr><td colspan="3" style="white-space: pre;">';
+      print_r($record);
+      echo '</td></tr>';*/
+    }
+    
+    $result->free();
+    
+    // Finally, let's close the database
+    $db->close();
+  }
+  
+?>
+</table>
+
+<?php include('includes/foot.inc.php'); 
+  // footer info and closing tags
+?>

@@ -1,20 +1,14 @@
 <?php 
   include('includes/nav.inc.php'); // include the nav bar
+  include('includes/head.inc.php') // include the head
 ?>
-<title>Homepage</title>   
 
 <html>
   <head>
-    <title>Homepage</title> 
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
-    <script type="text/javascript" src="resources/jquery-1.4.3.min.js"></script>
-    <link href="resources/termproj.css" rel="stylesheet" type="text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <title>Product Description</title>
   </head>
   <body>
     <div id="bodyBlock">
-
-      <h1>All Items</h1>
 
 <?php
   // We'll need a database connection both for retrieving records and for 
@@ -56,19 +50,17 @@
       } else {
         echo "\n".'<tr class="odd" id="movie-' . '"><td>';
       }
-      echo '<div class="row">';
-        echo '<div class="column">
-                <a href="productDescription.html"><img style="width:100%;"src="images/'.$record['myFile'].'"></a>
-                <a href="productDescription.html"><figcaption>$'.$record['price'].'<br>'.$record['title'].'</figcaption></a>
-            </div>';
-        
-        echo '</td><td>';
-        echo '</td></tr>';
-      // Uncomment the following three lines to see the underlying 
-      // associative array for each record.
-      /*echo '<tr><td colspan="3" style="white-space: pre;">';
-      print_r($record);
-      echo '</td></tr>';*/
+        echo '<div class="productDescrip"></div>
+                <h1>'.$record['title'].'</h1>
+                <h2>Price: $'.$record['price'].'</h2>
+                <img id="productPic" src="images/'.$record['myFile'].'" style="width:30%">
+              <div id="productInfo">
+        <h4>About this Item</h4>
+        <p>'.$record['detail'].'</p>
+        <p>Category/Categories: '.$record['categories'].'</p>
+        <p>Condition: '.$record['conditions'].'</p>
+            <a href="ContactInfo.html"><button type="button">Contact Seller</button></a>
+    </div>';
     }
     
     $result->free();

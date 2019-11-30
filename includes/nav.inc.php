@@ -3,8 +3,8 @@
     <div id="container">
     </div>
       <div id="header">
-          <a href="home.html"><img src="resources/logo.png"></a>
-          <a href="uploadPage.html"><button type="button">+ sell your stuff</button></a>
+          <a href="index.php"><img src="resources/logo.png"></a>
+          <a href="uploadform.php"><button type="button">+ sell your stuff</button></a>
     </div>
     <div id="content">
       <div id="nav">
