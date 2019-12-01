@@ -1,8 +1,5 @@
 <?php
   include('includes/head.inc.php') // include the head
-  $link = mysql_connect("localhost", "root", "rootroot") or die("Error connecting to database: ".mysql_error());
-  mysql_select_db($link, $rpifreeforesale) or die(mysql_error());
-
 ?>
 
 
@@ -11,20 +8,7 @@
     <title>Homepage</title>
      </head>
   <body>
-    <?php
-        $query = $_GET['search'];
-        $query = mysql_real_escape_string($query);
-        $raw_results = mysql_query("SELECT * FROM items
-            WHERE (`categories` LIKE '%".$query."%')") or die(mysql_error());
-        if(mysql_num_rows($raw_results) > 0){ // if one or more rows are returned do following
 
-            while($results = mysql_fetch_array($raw_results)){
-            // $results = mysql_fetch_array($raw_results) puts data from database into array, while it's valid it does the loop
-
-                echo "<p><h3>".$results['categories']."</h3>".$results['fullname']."</p>";
-                // posts results gotten from database(title and text) you can also show id ($results['id'])
-            }
-    ?>
     <div id="bodyBlock">
       <div id="container">
       </div>
@@ -51,13 +35,85 @@
             <li>Sports&Outdoors</li>
             <li>Textbooks</li>
             <li>Others</li>
-            <form action="index.php" method="GET">
+            <form action="index.php" method="post">
               <input type="text" name="search" placeholder="Choose a category"/>
               <input type="submit" value="submit"/>
+            </form>
           </ul>
         </div>
         </div>
+        <?php
+          // We'll need a database connection both for retrieving records and for
+          // inserting them.  Let's get it up front and use it for both processes
+          // to avoid opening the connection twice.  If we make a good connection,
+          // we'll change the $dbOk flag.
+          $dbOk = false;
 
+          /* Create a new database connection object, passing in the host, username,
+             password, and database to use. The "@" suppresses errors. */
+          @ $db = new mysqli('localhost', 'root', 'rootroot', 'rpifreeforsale');
+
+          if ($db->connect_error) {
+            echo '<div class="messages">Could not connect to the database. Error: ';
+            echo $db->connect_errno . ' - ' . $db->connect_error . '</div>';
+          } else {
+            $dbOk = true;
+          }
+
+
+          ?>
+
+        <table id="itemListing">
+        <?php
+          if ($dbOk) {
+            if (isset($_POST['search'])) {
+              $search = $_POST['search'];
+              $search = mysqli_real_escape_string($db, $search);
+              $query = "SELECT fullName, email, freeOrSale, title, price, myFile, conditions, categories, detail FROM items WHERE categories LIKE '%".$search."%'";
+
+              $result = $db->query($query);
+              $numRecords = $result->num_rows;
+
+              $j = 0;
+              for ($i=0; $i < $numRecords; $i++) {
+                $record = $result->fetch_assoc();
+                if($j%3 == 0) {
+                  echo "<tr>";
+                }
+                echo '<td><a href="productDescription.php"><img style="width:100%;"src="images/'.$record['myFile'].'"></a>
+                <a href="productDescription.php"><figcaption>$'.$record['price'].'<br>'.$record['title'].'</figcaption></a>
+                </td>';
+                if($j%3 == 2) {
+                  echo "</tr>";
+                }
+                $j++;
+              }
+            } else {
+              $query = "SELECT fullName, email, freeOrSale, title, price, myFile, conditions, categories, detail FROM items";
+              $result = $db->query($query);
+              $numRecords = $result->num_rows;
+              $j = 0;
+              for ($i=0; $i < $numRecords; $i++) {
+                $record = $result->fetch_assoc();
+                if($j%3 == 0) {
+                  echo "<tr>";
+                }
+                echo '<td><a href="productDescription.php"><img style="width:100%;"src="images/'.$record['myFile'].'"></a>
+                <a href="productDescription.php"><figcaption>$'.$record['price'].'<br>'.$record['title'].'</figcaption></a>
+                </td>';
+                if($j%3 == 2) {
+                  echo "</tr>";
+                }
+                $j++;
+              }
+            }
+            $result->free();
+
+            // Finally, let's close the database
+            $db->close();
+          }
+
+        ?>
 
 </table>
 

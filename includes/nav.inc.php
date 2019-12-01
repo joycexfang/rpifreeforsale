@@ -1,16 +1,4 @@
-<?php
-  if (isset($_POST['cate'])) {
-    $connection = new mysqli("localhost", "root", "rootroot", "rpifreeforsale");
-    $cate = $_POST['cate'];
-    echo "You have Selected: " .$cate;
-    $sql = $connection->query("SELECT fullName, email, freeOrSale, title, price, myFile, conditions, categories, detail FROM items WHERE categories LIKE %$cate%");
-    if ($sql > 0) {
-      while ($data = $sql->fetch_array())
-        echo $data['fullname'] . "<br>";
-      } else
-      echo "Your search query doesn't match any data!";
-    }
-?>
+
 <!DOCTYPE html>
 <body>
     <div id="container">
