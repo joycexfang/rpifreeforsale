@@ -1,6 +1,7 @@
 <?php
   include('includes/nav.inc.php'); // include the nav bar
   include('includes/head.inc.php') // include the head
+
 ?>
 
 <html>
@@ -27,6 +28,7 @@
   } else {
     $dbOk = true;
   }
+
 
   ?>
 
@@ -65,6 +67,7 @@
   }
 
 ?>
+
 </table>
 
     </div>

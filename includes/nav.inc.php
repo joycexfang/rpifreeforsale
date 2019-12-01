@@ -1,3 +1,16 @@
+<?php
+  if (isset($_POST['cate'])) {
+    $connection = new mysqli("localhost", "root", "rootroot", "rpifreeforsale");
+    $cate = $_POST['cate'];
+    echo "You have Selected: " .$cate;
+    $sql = $connection->query("SELECT fullName, email, freeOrSale, title, price, myFile, conditions, categories, detail FROM items WHERE categories LIKE %$cate%");
+    if ($sql > 0) {
+      while ($data = $sql->fetch_array())
+        echo $data['fullname'] . "<br>";
+      } else
+      echo "Your search query doesn't match any data!";
+    }
+?>
 <!DOCTYPE html>
 <body>
     <div id="container">
@@ -15,16 +28,21 @@
           <li><a href="#">Sale</a></li>
         </ul>
         <h3>Categories</h3>
-        <ul>
-          <li onclick="('textbooks')">Textbooks</li>
-          <li onclick="('electronics')"> Electronics</li>
-          <li onclick="('clothing&shoes')"> Clothing & Shoes</li>
-          <li onclick="('games')"> Games</li>
-          <li onclick="('furniture')"> Furniture</li>
-          <li onclick="('kitchen')"> Kitchen</li>
-          <li onclick="('sports&outdoors')"> Sports & Outdoors</li>
-          <li onclick="('beauty&health')"> Beauty & Health</li>
-          <li onclick="('others')"> Others</li>
-        </ul>
+        <form method="POST" action="index.php">
+          <select name"cate">
+            <option value="All">All</option>
+            <option value="Beauty&Health">Beauty&Health</option>
+            <option value="Clothing&Shoes">Clothing&Shoes</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Furniture">Furniture</option>
+            <option value="Games">Games</option>
+            <option value="Kitchen">Kitchen</option>
+            <option value="Sports&Outdoors">Sports&Outdoors</option>
+            <option value="Textbooks">Textbooks</option>
+            <option value="Others">Others</option>
+            <option value="Textbooks">Textbooks</option>
+          </select>
+          <input type="submit" name="submit" value="Search">
+        </form>
       </div>
       </div>
