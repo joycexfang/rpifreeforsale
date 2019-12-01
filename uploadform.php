@@ -1,7 +1,8 @@
 <?php
   include('includes/nav.inc.php'); // include the nav bar
-  include('includes/autofillform.php')
+  include('includes/head.inc.php') // include the head
 ?>
+
 <html>
   <head>
     <title>Forms with PHP - ITWS</title>
