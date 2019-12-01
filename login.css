@@ -49,6 +49,7 @@ img{
   font-weight: 700;
 }
 
+
 #wrapper #div2 li
 {
   list-style-type:none;
@@ -56,12 +57,11 @@ img{
 }
 #wrapper #div2 li #firstname
 {
-  width:49%;
+  width:50%;
 }
-#wrapper #div2 li #surname
+#wrapper #div2 li #lastname
 {
-  margin-left:2%;
-  width:49%;
+  width:50%;
 }
 #wrapper #div2 li input[type="text"]
 {
