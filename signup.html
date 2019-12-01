@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Login - RPI Free & For Sale</title>
+    <title>Sign Up - RPI Free & For Sale</title>
    <link href="login.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">  
@@ -17,11 +17,14 @@
     </div>
     
     <div id="div2">
-        <h2>Login to RPI Free & For Sale</h2>
+        <h2>Sign up</h2>
+        <li><input type= "text" id="firstname" placeholder="First Name"></li>
+        <li><input type= "text" id="lastname" placeholder="Last Name"></li>
         <li><input type= "text" id="username" placeholder="Username"></li>
-        <li><input type ="password" id="password" placeholder="Password"></li>
-        <li><input type="submit" onclick="getInfo()" value="Log in"></li>
-    <script src="login.js"></script>
+        <li><input type ="text" id="mail" placeholder="Mail Address"></li>
+        <li><input type ="password" id="password" placeholder="New Password"></li>
+        <li><input type="submit" onclick="validate()" value="Sign Up"></li>
+    <script src="signup.js"></script>
     </div>
     </div>
 </body>
