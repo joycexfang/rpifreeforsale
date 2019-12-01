@@ -43,28 +43,19 @@
     // echo '<tr><th>Movie Title:</th><th>Actors:</th><th></th></tr>';
 
     $last_title = '';
-    $j = 1;
+    $j = 0;
     for ($i=0; $i < $numRecords; $i++) {
       $record = $result->fetch_assoc();
-      echo '<td>
-      <div class="row">
-            <div class="column">
-                <a href="productDescription.php"><img style="width:100%;"src="images/'.$record['myFile'].'"></a>
-                <a href="productDescription.php"><figcaption>$'.$record['price'].'<br>'.$record['title'].'</figcaption></a>
-            </div></div>;
-            </td>
-            ';
-      //Display images in rows of 3
-      if($j%4==0) {
-        echo "<tr></tr>";
+      if($j%3 == 0) {
+        echo "<tr>";
       }
-      //Increase counter by 1
+      echo '<td><a href="productDescription.php"><img style="width:100%;"src="images/'.$record['myFile'].'"></a>
+      <a href="productDescription.php"><figcaption>$'.$record['price'].'<br>'.$record['title'].'</figcaption></a>
+      </td>';
+      if($j%3 == 2) {
+        echo "</tr>";
+      }
       $j++;
-      //Check to see rather u need to move to new row
-      if(($j%4==0)) {
-        echo "<td> </td>";
-      }
-    echo "</tr>";
     }
 
     $result->free();

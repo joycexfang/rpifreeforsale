@@ -16,15 +16,15 @@
         </ul>
         <h3>Categories</h3>
         <ul>
-          <li onclick="filterSelection('textbooks')">Textbooks</li>
-          <li onclick="fiterSelection('electronics')"> Electronics</li>
-          <li onclick="fiterSelection('clothing&shoes')"> Clothing & Shoes</li>
-          <li onclick="fiterSelection('games')"> Games</li>
-          <li onclick="fiterSelection('furniture')"> Furniture</li>
-          <li onclick="fiterSelection('kitchen')"> Kitchen</li>
-          <li onclick="fiterSelection('sports&outdoors')"> Sports & Outdoors</li>
-          <li onclick="fiterSelection('beauty&health')"> Beauty & Health</li>
-          <li onclick="fiterSelection('others')"> Others</li>
+          <li onclick="('textbooks')">Textbooks</li>
+          <li onclick="('electronics')"> Electronics</li>
+          <li onclick="('clothing&shoes')"> Clothing & Shoes</li>
+          <li onclick="('games')"> Games</li>
+          <li onclick="('furniture')"> Furniture</li>
+          <li onclick="('kitchen')"> Kitchen</li>
+          <li onclick="('sports&outdoors')"> Sports & Outdoors</li>
+          <li onclick="('beauty&health')"> Beauty & Health</li>
+          <li onclick="('others')"> Others</li>
         </ul>
       </div>
       </div>
