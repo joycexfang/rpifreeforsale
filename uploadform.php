@@ -157,15 +157,15 @@
 
       <?php
       // preset values
-       $fullName='Grace';
-       $email='grace@1';
-       $freeOrSale='Sale';
-       $title='Apple Charger';
-       $price=20.00;
-       $myFile='resources/mouse.jpg';
+       $fullName='';
+       $email='';
+       $freeOrSale='Free';
+       $title='';
+       $price=0.00;
+       $myFile='';
        $condition='New';
        $categories='Electronics';
-       $detail='This calculator is brand new, contact me if interested.'
+       $detail=''
        ?>
 
       <label class="field" for="fullName">Full Name:</label>

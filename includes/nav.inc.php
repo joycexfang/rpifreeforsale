@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <body>
     <div id="container">
@@ -16,15 +17,15 @@
         </ul>
         <h3>Categories</h3>
         <ul>
-          <li onclick="('textbooks')">Textbooks</li>
-          <li onclick="('electronics')"> Electronics</li>
-          <li onclick="('clothing&shoes')"> Clothing & Shoes</li>
-          <li onclick="('games')"> Games</li>
-          <li onclick="('furniture')"> Furniture</li>
-          <li onclick="('kitchen')"> Kitchen</li>
-          <li onclick="('sports&outdoors')"> Sports & Outdoors</li>
-          <li onclick="('beauty&health')"> Beauty & Health</li>
-          <li onclick="('others')"> Others</li>
+          <li>Beauty&Health</li>
+          <li>Clothing&Shoes</li>
+          <li>Electronics</li>
+          <li>Furniture</li>
+          <li>Games</li>
+          <li>Kitchen</li>
+          <li>Sports&Outdoors</li>
+          <li>Textbooks</li>
+          <li>Others</li>
         </ul>
       </div>
       </div>
