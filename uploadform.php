@@ -191,9 +191,9 @@
 
       <label class="field" for="conditions">Condition:</label>
       <div class="value"><ul style="list-style: none;">
-                            <li><input type="radio" name="conditions" value="new" checked> New</li>
-                            <li><input type="radio" name="conditions" value="likenew"> Used - Like New</li>
-                            <li><input type="radio" name="conditions" value="good"> Used - Good</li>
+                            <li><input type="radio" name="conditions" value="New" checked> New</li>
+                            <li><input type="radio" name="conditions" value="LikeNew"> Used - Like New</li>
+                            <li><input type="radio" name="conditions" value="Good"> Used - Good</li>
                          </ul><?php $conditions; ?></div>
 
       <label class="field" for="categories">Categories (Please check all the boxes the item applies to):</label>
