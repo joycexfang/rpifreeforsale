@@ -1,4 +1,4 @@
-<?php 
+<?php
   include('includes/nav.inc.php'); // include the nav bar
   include('includes/head.inc.php') // include the head
 ?>
@@ -11,21 +11,21 @@
     <div id="bodyBlock">
 
 <?php
-  // We'll need a database connection both for retrieving records and for 
+  // We'll need a database connection both for retrieving records and for
   // inserting them.  Let's get it up front and use it for both processes
-  // to avoid opening the connection twice.  If we make a good connection, 
+  // to avoid opening the connection twice.  If we make a good connection,
   // we'll change the $dbOk flag.
   $dbOk = false;
-  
+
   /* Create a new database connection object, passing in the host, username,
      password, and database to use. The "@" suppresses errors. */
-  @ $db = new mysqli('localhost', 'root', 'root', 'rpifreeforsale');
-  
+  @ $db = new mysqli('localhost', 'root', 'rootroot', 'rpifreeforsale');
+
   if ($db->connect_error) {
     echo '<div class="messages">Could not connect to the database. Error: ';
     echo $db->connect_errno . ' - ' . $db->connect_error . '</div>';
   } else {
-    $dbOk = true; 
+    $dbOk = true;
   }
 
   ?>
@@ -39,7 +39,7 @@
 
     $result = $db->query($query);
     $numRecords = $result->num_rows;
-    
+
     // echo '<tr><th>Movie Title:</th><th>Actors:</th><th></th></tr>';
 
     $last_title = '';
@@ -58,16 +58,16 @@
             <a href="ContactInfo.html"><button type="button">Contact Seller</button></a>
     </div>';
     }
-    
+
     $result->free();
-    
+
     // Finally, let's close the database
     $db->close();
   }
-  
+
 ?>
 </table>
 
-<?php include('includes/foot.inc.php'); 
+<?php include('includes/foot.inc.php');
   // footer info and closing tags
 ?>
