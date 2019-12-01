@@ -56,7 +56,7 @@
         <p>Category/Categories: '.$record['categories'].'</p>
         <p>Condition: '.$record['conditions'].'</p>
             <a href="ContactInfo.html"><button type="button">Contact Seller</button></a>
-    </div>';
+    </div><br>';
     }
     
     $result->free();
