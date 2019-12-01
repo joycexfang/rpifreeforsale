@@ -6,7 +6,15 @@
 <html>
   <head>
     <title>Homepage</title>
-     </head>
+    <style>
+      input[type=text] {
+        width:100%;
+      }
+      input[type=submit]{
+        background-color:#37404f;
+      }
+    </style>
+  </head>
   <body>
 
     <div id="bodyBlock">
@@ -35,7 +43,7 @@
             <li>Sports&Outdoors</li>
             <li>Textbooks</li>
             <li>Others</li>
-            <form action="index.php" method="post">
+            <form class="form-inline" action="index.php" method="post">
               <input type="text" name="search" placeholder="Choose a category"/>
               <input type="submit" value="submit"/>
             </form>
