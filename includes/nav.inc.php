@@ -28,21 +28,16 @@
           <li><a href="#">Sale</a></li>
         </ul>
         <h3>Categories</h3>
-        <form method="POST" action="index.php">
-          <select name"cate">
-            <option value="All">All</option>
-            <option value="Beauty&Health">Beauty&Health</option>
-            <option value="Clothing&Shoes">Clothing&Shoes</option>
-            <option value="Electronics">Electronics</option>
-            <option value="Furniture">Furniture</option>
-            <option value="Games">Games</option>
-            <option value="Kitchen">Kitchen</option>
-            <option value="Sports&Outdoors">Sports&Outdoors</option>
-            <option value="Textbooks">Textbooks</option>
-            <option value="Others">Others</option>
-            <option value="Textbooks">Textbooks</option>
-          </select>
-          <input type="submit" name="submit" value="Search">
-        </form>
+        <ul>
+          <li>Beauty&Health</li>
+          <li>Clothing&Shoes</li>
+          <li>Electronics</li>
+          <li>Furniture</li>
+          <li>Games</li>
+          <li>Kitchen</li>
+          <li>Sports&Outdoors</li>
+          <li>Textbooks</li>
+          <li>Others</li>
+        </ul>
       </div>
       </div>
