@@ -78,7 +78,7 @@
           <table id="itemListing">
           <?php
             if ($dbOk) {
-              $query = "SELECT fullName, email, freeOrSale, title, price, myFile, conditions, categories, detail FROM items WHERE freeOrSale LIKE 'Free'";
+              $query = "SELECT fullName, email, freeOrSale, title, price, myFile, conditions, categories, detail FROM items WHERE categories LIKE 'Free'";
               $result = $db->query($query);
               $numRecords = $result->num_rows;
               $j = 0;
