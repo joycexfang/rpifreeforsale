@@ -1,11 +1,19 @@
-<?php
-  include('includes/head.inc.php') // include the head
-?>
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <script type="text/javascript" src="../resources/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="../resources/JavaScript/uploadpage.js"></script> 
+    <link href="../resources/termproj.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="bodyBlock">
 
 <html>
   <head>
-    <title>Homepage</title>
+    <title>Free Items</title>
     <style>
       input[type=text] {
         width:100%;
@@ -21,7 +29,7 @@
       <div id="container">
       </div>
         <div id="header">
-            <a href="index.php"><img src="resources/logo.png"></a>
+            <a href="../index.php"><img src="../resources/logo.png"></a>
             <a href="login.html"><button type="button">logout</button></a>
             <a href="uploadform.php"><button type="button">+ sell your stuff</button></a>
       </div>
@@ -29,8 +37,8 @@
         <div id="nav">
           <h3>Price</h3>
           <ul>
-            <li><a href="navbarpages/free.php" class="selected">Free</a></li>
-            <li><a href="navbarpages/sale.php">Sale</a></li>
+            <li><a href="free.php" class="selected">Free</a></li>
+            <li><a href="sale.php">Sale</a></li>
           </ul>
           <h3>Categories</h3>
           <ul>
@@ -88,8 +96,8 @@
                 if($j%3 == 0) {
                   echo "<tr>";
                 }
-                echo '<td><a href="productDescription.php"><img style="width:100%;"src="images/'.$record['myFile'].'"></a>
-                <a href="productDescription.php"><figcaption>$'.$record['price'].'<br>'.$record['title'].'</figcaption></a>
+                echo '<td><a href="../productDescription.php"><img style="width:100%;"src="../images/'.$record['myFile'].'"></a>
+                <a href="../productDescription.php"><figcaption>$'.$record['price'].'<br>'.$record['title'].'</figcaption></a>
                 </td>';
                 if($j%3 == 2) {
                   echo "</tr>";
@@ -106,8 +114,8 @@
                 if($j%3 == 0) {
                   echo "<tr>";
                 }
-                echo '<td><a href="productDescription.php"><img style="width:100%;"src="images/'.$record['myFile'].'"></a>
-                <a href="productDescription.php"><figcaption>$'.$record['price'].'<br>'.$record['title'].'</figcaption></a>
+                echo '<td><a href="../productDescription.php"><img style="width:100%;"src="../images/'.$record['myFile'].'"></a>
+                <a href="../productDescription.php"><figcaption>$'.$record['price'].'<br>'.$record['title'].'</figcaption></a>
                 </td>';
                 if($j%3 == 2) {
                   echo "</tr>";
@@ -129,6 +137,6 @@
   </body>
 </html>
 
-<?php include('includes/foot.inc.php');
+<?php include('../includes/foot.inc.php');
   // footer info and closing tags
 ?>

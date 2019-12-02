@@ -12,8 +12,8 @@
       <div id="nav">
         <h3>Price</h3>
         <ul>
-          <li><a href="#" class="selected">Free</a></li>
-          <li><a href="#">Sale</a></li>
+          <li><a href="free.php" class="selected">Free</a></li>
+          <li><a href="sale.php">Sale</a></li>
         </ul>
         <h3>Categories</h3>
         <ul>
