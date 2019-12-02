@@ -12,6 +12,13 @@
       }
       input[type=submit]{
         background-color:#37404f;
+        margin-top: 0px;
+        margin-right: 50px;
+        margin-bottom: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 30px;
+        padding-left: 30px;
       }
     </style>
   </head>
@@ -27,6 +34,10 @@
       </div>
       <div id="content">
         <div id="nav">
+          <form class="form-inline" action="index.php" method="post">
+            <input type="text" name="search" placeholder="Search..."/>
+            <input type="submit" value="search"/>
+          </form>
           <h3>Price</h3>
           <ul>
             <li><a href="navbarpages/free.php" class="selected">Free</a></li>
@@ -43,10 +54,6 @@
             <li>Sports&Outdoors</li>
             <li>Textbooks</li>
             <li>Others</li>
-            <form class="form-inline" action="index.php" method="post">
-              <input type="text" name="search" placeholder="Choose a category"/>
-              <input type="submit" value="submit"/>
-            </form>
           </ul>
         </div>
         </div>
@@ -77,7 +84,16 @@
             if (isset($_POST['search'])) {
               $search = $_POST['search'];
               $search = mysqli_real_escape_string($db, $search);
-              $query = "SELECT fullName, email, freeOrSale, title, price, myFile, conditions, categories, detail FROM items WHERE categories LIKE '%".$search."%'";
+              $query = "SELECT fullName, email, freeOrSale, title, price, myFile, conditions, categories, detail
+              FROM items
+              WHERE fullName LIKE '%".$search."%'
+              OR email LIKE '%".$search."%'
+              OR freeOrSale LIKE '%".$search."%'
+              OR title LIKE '%".$search."%'
+              OR price LIKE '%".$search."%'
+              OR myFile LIKE '%".$search."%'
+              OR conditions LIKE '%".$search."%'
+              OR categories LIKE '%".$search."%'";
 
               $result = $db->query($query);
               $numRecords = $result->num_rows;
@@ -88,7 +104,7 @@
                 if($j%3 == 0) {
                   echo "<tr>";
                 }
-                echo '<td><a href="productDescription.php"><img style="width:100%;"src="images/'.$record['myFile'].'"></a>
+                echo '<td><a href="productDescription.php"><img style="width:370px;"src="images/'.$record['myFile'].'"></a>
                 <a href="productDescription.php"><figcaption>$'.$record['price'].'<br>'.$record['title'].'</figcaption></a>
                 </td>';
                 if($j%3 == 2) {
