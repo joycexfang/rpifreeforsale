@@ -1,5 +1,6 @@
 <?php
-  include('includes/head.inc.php') // include the head
+  include('includes/head.inc.php'); // include the head
+  include('includes/dbconnect.inc.php') // include the db connection
 ?>
 
 <html>
@@ -56,6 +57,7 @@
           </ul>
         </div>
         </div>
+<<<<<<< HEAD
         <?php
           // We'll need a database connection both for retrieving records and for
           // inserting them.  Let's get it up front and use it for both processes
@@ -75,6 +77,9 @@
           }
           ?>
 
+=======
+      
+>>>>>>> c000e3ee0da170a025e73531b976539e7aae3800
         <table id="itemListing">
         <?php
           if ($dbOk) {

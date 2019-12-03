@@ -1,6 +1,7 @@
 <?php
   include('includes/nav.inc1.php'); // include the nav bar
-  include('includes/head.inc.php') // include the head
+  include('includes/head.inc.php'); // include the head
+  include('includes/dbconnect.inc.php') // include the db connection
 ?>
 
 <html>
@@ -18,22 +19,6 @@
       <h1>Sell Your Item</h1>
 
 <?php
-    // We'll need a database connection both for retrieving records and for
-    // inserting them.  Let's get it up front and use it for both processes
-    // to avoid opening the connection twice.  If we make a good connection,
-    // we'll change the $dbOk flag.
-    $dbOk = false;
-
-    /* Create a new database connection object, passing in the host, username,
-        password, and database to use. The "@" suppresses errors. */
-    $db = new mysqli('localhost', 'root', 'root', 'rpifreeforsale');
-
-    if ($db->connect_error) {
-      echo '<div class="messages">Could not connect to the database. Error: ';
-      echo $db->connect_errno . ' - ' . $db->connect_error . '</div>';
-    } else {
-      $dbOk = true;
-    }
     // Now let's process our form:
     // Have we posted?
     $havePost = isset($_POST["save"]);

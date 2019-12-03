@@ -1,7 +1,7 @@
 <?php
   include('../includes/nav.inc.php'); // include the nav bar
   include('../includes/head.inc.php'); // include the head
-  include('../includes/dbconnect.inc.php') // include the head
+  include('../includes/dbconnect.inc.php') // include the db connection
 ?>
 
 <!DOCTYPE html>
