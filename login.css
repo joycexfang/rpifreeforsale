@@ -4,7 +4,7 @@ body
   width:100%;
   margin:0 auto;
   padding:0px;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 h2 {
   font-weight: lighter;
@@ -46,7 +46,7 @@ img{
 
 #wrapper #div2 h2
 {
-  font-weight: 700;
+  font-weight: lighter;
 }
 
 
@@ -106,7 +106,9 @@ img{
   color:#2E2E2E;
   font-size:18px;
 }
-
+p {
+  font-weight: lighter;
+}
 
 #wrapper #div2 li input[type="submit"]
 {

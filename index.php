@@ -2,7 +2,6 @@
   include('includes/head.inc.php') // include the head
 ?>
 
-
 <html>
   <head>
     <title>Homepage</title>
@@ -74,8 +73,6 @@
           } else {
             $dbOk = true;
           }
-
-
           ?>
 
         <table id="itemListing">
