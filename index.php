@@ -6,14 +6,6 @@
 <html>
   <head>
     <title>Homepage</title>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <script type="text/javascript">
-      function test(id){
-        alert(id);
-      }
-    </script>
-
     <style>
       input[type=text] {
         width:100%;
