@@ -45,15 +45,15 @@
           </ul>
           <h3>Categories</h3>
           <ul>
-            <li>Beauty&Health</li>
-            <li>Clothing&Shoes</li>
-            <li>Electronics</li>
-            <li>Furniture</li>
-            <li>Games</li>
-            <li>Kitchen</li>
-            <li>Sports&Outdoors</li>
-            <li>Textbooks</li>
-            <li>Others</li>
+            <li><a href="navbarpages/beauty&health.php">Beauty&Health</a></li>
+            <li><a href="navbarpages/clothing&shoes.php">Clothing&Shoes</a></li>
+            <li><a href="navbarpages/electronics.php">Electronics</a></li>
+            <li><a href="navbarpages/furniture.php">Furniture</a></li>
+            <li><a href="navbarpages/games.php">Games</a></li>
+            <li><a href="navbarpages/kitchen.php">Kitchen</a></li>
+            <li><a href="navbarpages/sports&outdoors.php">Sports&Outdoors</a></li>
+            <li><a href="navbarpages/textbooks.php">Textbooks</a></li>
+            <li><a href="navbarpages/others.php">Others</a></li>
           </ul>
         </div>
         </div>
@@ -66,7 +66,7 @@
 
           /* Create a new database connection object, passing in the host, username,
              password, and database to use. The "@" suppresses errors. */
-          @ $db = new mysqli('localhost', 'root', 'rootroot', 'rpifreeforsale');
+          @ $db = new mysqli('localhost', 'root', 'root', 'rpifreeforsale');
 
           if ($db->connect_error) {
             echo '<div class="messages">Could not connect to the database. Error: ';
