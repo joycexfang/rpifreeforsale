@@ -6,6 +6,14 @@
 <html>
   <head>
     <title>Homepage</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+      function test(id){
+        alert(id);
+      }
+    </script>
+
     <style>
       input[type=text] {
         width:100%;
@@ -102,7 +110,7 @@
                 if($j%3 == 0) {
                   echo "<tr>";
                 }
-                echo '<td><a href="productDescription.php"><img style="width:100%;"src="images/'.$record['myFile'].'"></a>
+                echo '<td><a href="productDescription.php"><img style="width:370px;"src="images/'.$record['myFile'].'"></a>
                 <a href="productDescription.php"><figcaption>$'.$record['price'].'<br>'.$record['title'].'</figcaption></a>
                 </td>';
                 if($j%3 == 2) {
