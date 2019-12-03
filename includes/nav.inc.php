@@ -16,15 +16,15 @@
         </ul>
         <h3>Categories</h3>
         <ul>
-          <li><a href="beauty&health.php" class="selected">Beauty&Health</li></a>
-          <li><a href="clothing&shoes.php" class="selected">Clothing&Shoes</li></a>
-          <li><a href="electronics.php" class="selected">Electronics</li></a>
-          <li><a href="furniture.php" class="selected">Furniture</li></a>
-          <li><a href="games.php" class="selected">Games</li></a>
-          <li><a href="kitchen.php" class="selected">Kitchen</li></a>
-          <li><a href="sports&outdoors.php" class="selected">Sports&Outdoors</li></a>
-          <li><a href="textbooks.php" class="selected">Textbooks</li></a>
-          <li><a href="others.php" class="selected">Others</li></a>
+          <li><a href="textbooks.php">Textbooks</a></li>
+          <li><a href="electronics.php">Electronics</a></li>
+          <li><a href="clothing&shoes.php">Clothing & Shoes</a></li>
+          <li><a href="games.php">Games</a></li>
+          <li><a href="furniture.php">Furniture</a></li>
+          <li><a href="kitchen.php">Kitchen</a></li>
+          <li><a href="sports&outdoors.php">Sports & Outdoors</a></li>
+          <li><a href="beauty&health.php">Beauty & Health</a></li>
+          <li><a href="others.php">Others</a></li>
         </ul>
       </div>
       </div>
