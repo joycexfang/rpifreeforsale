@@ -110,6 +110,7 @@ img{
 
 #wrapper #div2 li input[type="submit"]
 {
+  font-family: 'Roboto Slab', serif;
   width:205px;
   height:45px;
   text-align:center;
