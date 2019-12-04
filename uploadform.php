@@ -154,20 +154,20 @@
        ?>
 
       <label class="field" for="fullName">Full Name:</label>
-      <div class="value"><input type="text" size="60" value="<?php echo $fullName; ?>" name="fullName" id="fullName"/></div>
+      <div class="value"><input type="text" size="60" value="<?php echo $fullName; ?>" name="fullName" id="fullName" placeholder="@John Smith"/></div>
 
       <label class="field" for="email">Email:</label>
-      <div class="value"><input type="email" size="60" value="<?php echo $email; ?>" name="email" id="email"/></div>
+      <div class="value"><input type="email" size="60" value="<?php echo $email; ?>" name="email" id="email" placeholder="@rpi.edu"/></div>
       <br>
       <label class="field" for="freeOrSale">Free or Sale:</label>
       <div class="value"><input type="radio" name="freeOrSale" value="free" checked> Free<br>
                          <input type="radio" name="freeOrSale" value="sale"> Sale<br><?php $freeOrSale; ?></div>
       <br>
       <label class="field" for="title">Title:</label>
-      <div class="value"><input type="text" size="60" value="<?php echo $title; ?>" name="title" id="title"/></div>
+      <div class="value"><input type="text" size="60" value="<?php echo $title; ?>" name="title" id="title" placeholder="Title your item!"/></div>
 
       <label class="field" for="price">Price:</label>
-      <div class="value"><input type="number" placeholder="$" size="60" value="<?php echo $price; ?>" name="price" id="price"/></div>
+      <div class="value"><input type="number" placeholder="$0" size="60" value="<?php echo $price; ?>" name="price" id="price"/></div>
       <br>
       <?php
         include('uploadfile.php'); // include the uploadfile.php
@@ -197,7 +197,7 @@
       </ul><?php $categories; ?></div>
 
       <label class="field" for="detail">Describe Your Item:</label>
-      <div class="value"><input style="width:500px" type="text" size="60" value="<?php echo $detail; ?>" name="detail" id="detail"/></div>
+      <div class="value"><input style="width:500px" type="text" size="60" value="<?php echo $detail; ?>" name="detail" id="detail" placeholder="Item info..."/></div>
 
       <input type="submit" value="save" id="save" name="save"/>
     </div>
