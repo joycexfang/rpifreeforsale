@@ -6,7 +6,7 @@
 
 <html>
   <head>
-    <title>Forms with PHP - ITWS</title>
+    <title>Sell Your Stuff</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <script type="text/javascript" src="resources/jquery-1.4.3.min.js"></script>
     <script type="text/javascript" src="resources/JavaScript/uploadpage.js"></script>

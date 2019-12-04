@@ -19,7 +19,7 @@
 
 <html>
   <head>
-    <title>Free Items</title>
+    <title>Free</title>
     <style>
       input[type=text] {
         width:100%;
