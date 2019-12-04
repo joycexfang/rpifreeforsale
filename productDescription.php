@@ -17,7 +17,7 @@
     if (isset($_GET['id'])){{}
       $id = $_GET['id'];
       $id = mysqli_real_escape_string($db, $id);
-      $query = "SELECT fullName, email, freeOrSale, title, price, myFile, conditions, categories, detail FROM items WHERE id = '$id'";
+      $query = "SELECT * FROM items WHERE id = '$id'";
       $result = $db->query($query);
       $numRecords = $result->num_rows;
       $last_title = '';
