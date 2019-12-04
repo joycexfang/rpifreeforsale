@@ -1,6 +1,6 @@
 var objPeople = [
     {
-        username: "yuchen",
+        username: "bob",
         password: "123456"
     }
 
@@ -13,7 +13,6 @@ function getInfo() {
 	for(var i = 0; i < objPeople.length; i++) {
 		// check is user input matches username and password of a current index of the objPeople array
 		if(username == objPeople[i].username && password == objPeople[i].password) {
-			alert(username + " is logged in.");
             window.open("index.php");
 			// stop the function if this is found to be true
 			return
