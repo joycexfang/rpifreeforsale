@@ -15,14 +15,9 @@
 <?php
   if ($dbOk) {
 
-    // $query = "SELECT movies.title, actors.last_name, actors.first_names FROM movies, actors, relationship WHERE relationship.movieid = movies.movieid AND relationship.actorid = actors.actorid order by title";
     $query = "SELECT fullName, email, freeOrSale, title, price, myFile, conditions, categories, detail FROM items";
-
     $result = $db->query($query);
     $numRecords = $result->num_rows;
-
-    // echo '<tr><th>Movie Title:</th><th>Actors:</th><th></th></tr>';
-
     $last_title = '';
     for ($i=0; $i < $numRecords; $i++) {
       $record = $result->fetch_assoc();
