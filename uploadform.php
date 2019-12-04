@@ -140,19 +140,6 @@
   <fieldset style="border:none;">
     <div class="formData">
 
-      <?php
-      // preset values
-       $fullName='';
-       $email='';
-       $freeOrSale='Free';
-       $title='';
-       $price=0.00;
-       $myFile='';
-       $condition='New';
-       $categories='Electronics';
-       $detail=''
-       ?>
-
       <label class="field" for="fullName">Full Name:</label>
       <div class="value"><input type="text" size="60" value="<?php echo $fullName; ?>" name="fullName" id="fullName" placeholder="@John Smith"/></div>
 
