@@ -64,7 +64,7 @@
             if (isset($_POST['search'])) {
               $search = $_POST['search'];
               $search = mysqli_real_escape_string($db, $search);
-              $query = "SELECT fullName, email, freeOrSale, title, price, myFile, conditions, categories, detail
+              $query = "SELECT id, fullName, email, freeOrSale, title, price, myFile, conditions, categories, detail
               FROM items
               WHERE fullName LIKE '%".$search."%'
               OR email LIKE '%".$search."%'
@@ -81,10 +81,11 @@
               $j = 0;
               for ($i=0; $i < $numRecords; $i++) {
                 $record = $result->fetch_assoc();
+                $id = $record["id"];
                 if($j%3 == 0) {
                   echo "<tr>";
                 }
-                echo '<td><a href="productDescription.php"><img style="width:370px;"src="images/'.$record['myFile'].'"></a>
+                echo '<td><a href="productDescription.php?id=' . $id . '"><img style="width:370px;"src="images/'.$record['myFile'].'"></a>
                 <a href="productDescription.php"><figcaption>$'.$record['price'].'<br>'.$record['title'].'</figcaption></a>
                 </td>';
                 if($j%3 == 2) {
@@ -93,16 +94,17 @@
                 $j++;
               }
             } else {
-              $query = "SELECT fullName, email, freeOrSale, title, price, myFile, conditions, categories, detail FROM items";
+              $query = "SELECT id, fullName, email, freeOrSale, title, price, myFile, conditions, categories, detail FROM items";
               $result = $db->query($query);
               $numRecords = $result->num_rows;
               $j = 0;
               for ($i=0; $i < $numRecords; $i++) {
                 $record = $result->fetch_assoc();
+                $id = $record["id"];
                 if($j%3 == 0) {
                   echo "<tr>";
                 }
-                echo '<td><a href="productDescription.php"><img style="width:370px;"src="images/'.$record['myFile'].'"></a>
+                echo '<td><a href="productDescription.php?id=' . $id . '"><img style="width:370px;"src="images/'.$record['myFile'].'"></a>
                 <a href="productDescription.php"><figcaption>$'.$record['price'].'<br>'.$record['title'].'</figcaption></a>
                 </td>';
                 if($j%3 == 2) {
