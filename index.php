@@ -86,7 +86,7 @@
                   echo "<tr>";
                 }
                 echo '<td><a href="productDescription.php?id=' . $id . '"><img style="width:370px;"src="images/'.$record['myFile'].'"></a>
-                <a href="productDescription.php"><figcaption>$'.$record['price'].'<br>'.$record['title'].'</figcaption></a>
+                <a href="productDescription.php?id=' . $id . '"><figcaption>$'.$record['price'].'<br>'.$record['title'].'</figcaption></a>
                 </td>';
                 if($j%3 == 2) {
                   echo "</tr>";
@@ -105,7 +105,7 @@
                   echo "<tr>";
                 }
                 echo '<td><a href="productDescription.php?id=' . $id . '"><img style="width:370px;"src="images/'.$record['myFile'].'"></a>
-                <a href="productDescription.php"><figcaption>$'.$record['price'].'<br>'.$record['title'].'</figcaption></a>
+                <a href="productDescription.php?id=' . $id . '"><figcaption>$'.$record['price'].'<br>'.$record['title'].'</figcaption></a>
                 </td>';
                 if($j%3 == 2) {
                   echo "</tr>";
