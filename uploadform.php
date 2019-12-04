@@ -137,7 +137,7 @@
 ?>
 
 <form id="addForm" name="addForm" action="uploadform.php" method="post" enctype="multipart/form-data">
-  <fieldset>
+  <fieldset style="border:none;">
     <div class="formData">
 
       <?php
@@ -158,23 +158,23 @@
 
       <label class="field" for="email">Email:</label>
       <div class="value"><input type="email" size="60" value="<?php echo $email; ?>" name="email" id="email"/></div>
-
+      <br>
       <label class="field" for="freeOrSale">Free or Sale:</label>
       <div class="value"><input type="radio" name="freeOrSale" value="free" checked> Free<br>
                          <input type="radio" name="freeOrSale" value="sale"> Sale<br><?php $freeOrSale; ?></div>
-
+      <br>
       <label class="field" for="title">Title:</label>
       <div class="value"><input type="text" size="60" value="<?php echo $title; ?>" name="title" id="title"/></div>
 
       <label class="field" for="price">Price:</label>
       <div class="value"><input type="number" placeholder="$" size="60" value="<?php echo $price; ?>" name="price" id="price"/></div>
-
+      <br>
       <?php
         include('uploadfile.php'); // include the uploadfile.php
       ?>
       <label class="field" for="myFile">Upload a Picture of Your Item:</label>
       <div class="value"><input type="file" size="60" value="<?php echo $myFile; ?>" name="myFile" id="myFile"/></div>
-
+      <br>
       <label class="field" for="conditions">Condition:</label>
       <div class="value"><ul style="list-style: none;">
                             <li><input type="radio" name="conditions" value="New" checked> New</li>
@@ -182,7 +182,7 @@
                             <li><input type="radio" name="conditions" value="Good"> Used - Good</li>
                          </ul><?php $conditions; ?></div>
 
-      <label class="field" for="categories">Categories (Please check all the boxes the item applies to):</label>
+      <label class="field" for="categories">Select a Category:</label>
       <div class="value">
       <ul style="list-style: none;">
         <li><input type="radio" name="categories" value="Textbooks" checked/> Textbooks</li>
@@ -197,7 +197,7 @@
       </ul><?php $categories; ?></div>
 
       <label class="field" for="detail">Describe Your Item:</label>
-      <div class="value"><input style="width:800px" type="text" size="60" value="<?php echo $detail; ?>" name="detail" id="detail"/></div>
+      <div class="value"><input style="width:500px" type="text" size="60" value="<?php echo $detail; ?>" name="detail" id="detail"/></div>
 
       <input type="submit" value="save" id="save" name="save"/>
     </div>
