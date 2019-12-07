@@ -1,6 +1,6 @@
 # RPI Free & For Sale
 
-## Group
+## Team 18
 Joyce Fang, Yuchen Luo, and Ilhwan Song
 
 ## Problem
@@ -15,7 +15,7 @@ Any RPI student who wishes to buy or sell items. In order for students to post a
 ## In Context of Existing Applications:
 Websites such as Craigslist and Amazon are fairly similar to how our website functions. Craigslist has a “create a posting” button which will be like the upload feature on our website. Amazon has listings of products, which is what we hope to achieve with the layout and design of the items for sale. However, the difference of our website from Craigslist or Amazon is that RPI Free and For Sale is meant to serve only RPI students. We hope that once project becomes fully functional, it will allow all RPI students use the website and feel secure.
 
-# Areas of Focus:
+## Areas of Focus:
 # Primary Area:
 Area 4: Pull real data from a database — Save the data submitted by the user and use database to display items
 # Secondary Area:
