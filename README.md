@@ -16,9 +16,9 @@ Any RPI student who wishes to buy or sell items. In order for students to post a
 Websites such as Craigslist and Amazon are fairly similar to how our website functions. Craigslist has a “create a posting” button which will be like the upload feature on our website. Amazon has listings of products, which is what we hope to achieve with the layout and design of the items for sale. However, the difference of our website from Craigslist or Amazon is that RPI Free and For Sale is meant to serve only RPI students. We hope that once project becomes fully functional, it will allow all RPI students use the website and feel secure.
 
 ## Areas of Focus:
-Primary Area:
+### Primary Area:
 Area 4: Pull real data from a database — Save the data submitted by the user and use database to display items
-Secondary Area:
+### Secondary Area:
 Area 1: HTML, CSS, and graphics for page layout and design — Design a homepage with filter bar, item listing page, upload page
 
 ## Comments:
@@ -26,7 +26,7 @@ All three of our team members lacked experiences in creating website and using d
 
 ## Launch Instructions
 
-## Install and run on localhost:
+### Install and run on localhost:
 1. Clone the files to your localhost htdocs folder
 2. Go to phpMyAdmin and create a database called "rpifreeforsale"
 3. Go to the database and import the file "itemsTable.sql" from the rpifreeforsale folder
