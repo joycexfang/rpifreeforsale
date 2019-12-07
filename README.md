@@ -4,19 +4,31 @@
 Joyce Fang, Yuchen Luo, and Ilhwan Song
 
 ## Problem
-Current administrators of the RPI Free & For Sale Facebook Group are not allowing access to RPI students. This new website will enable RPI students to buy and sell items more easily and efficiently among other RPI students.
+Current administrators of the RPI Free & For Sale Facebook Group are not allowing access to RPI students. Although the RPI Facebook group Free and For Sale exists, it is no longer active anymore. This new website will enable RPI students to buy and sell items more easily and efficiently among other RPI students.
 
-## What it does: 
-A simple and easy website that helps RPI students exchange items for free and/or buy and sell items. It contains a listing of items that are for sale, an “upload” feature to post an item, and the descriptions of those items. Additionally, potential buyers can get in contact with the seller by submitting a “Contact the Seller” form.
+## What it does:
+A simple and easy website that helps RPI students exchange items for free and/or buy and sell items. It includes a product listing page of all of the items for sale, an “upload” feature where a seller can fill a form about the item they wish to sell, a login and sign up page, and product descriptions of items being sold.
 
-## Who it serves: 
-Any RPI student who wishes to buy or sell items. In order for students to post an item on the website, the student must currently be enrolled in RPI. Therefore, in the process of posting an item, the student must confirm their RPI email by typing their email on the website and receiving a confirmation code through their RPI email.
+## Who it serves:
+Any RPI student who wishes to buy or sell items. In order for students to post an item on the website, the student must currently be enrolled in RPI.
 
-## In Context of Existing Applications: 
-Websites such as Craigslist and Amazon are fairly similar to how our website functions. Craigslist has a “create a posting” button which will be like the upload feature on our website. Amazon has listings of products, which is what we hope to achieve with the layout and design of the items for sale. However, the difference of our website from Craigslist or Amazon is that RPI Free and For Sale is meant to serve only RPI students. Our project distinguishes itself from other projects because we think about the safety of the users first. Making sure that all the users are RPI students and making the users submit the confirmation code are essential to our project. RPI Facebook group Free and For Sale exists; however, it is no longer in functions.
+## In Context of Existing Applications:
+Websites such as Craigslist and Amazon are fairly similar to how our website functions. Craigslist has a “create a posting” button which will be like the upload feature on our website. Amazon has listings of products, which is what we hope to achieve with the layout and design of the items for sale. However, the difference of our website from Craigslist or Amazon is that RPI Free and For Sale is meant to serve only RPI students. We hope that once project becomes fully functional, it will allow all RPI students use the website and feel secure.
 
-## Primary Area: 
+## Primary Area:
+Area 4: Pull real data from a database — Save the data submitted by the user and use database to display items
+## Secondary Area:
 Area 1: HTML, CSS, and graphics for page layout and design — Design a homepage with filter bar, item listing page, upload page
 
-## Secondary Area: 
-Area 2: Javascript interactivity to improve user experience — User can input data regarding contact info, item description, etc.
+## Comments:
+All three of our team members lacked experiences in creating website and using database, so we received a lot of help from the professor, Youtube videos, and other websites. Problems we ran into include: uploading user input data to the database using mySQL and PHP (Syntax errors), saving files from users and moving the files to the specific folder location, how to dynamically display data from the database by reading the data using PHP and mySQL, creating search bar and filter items within the database, how to link the connection between the user input and database. In the future, we hope in include: actual login system that allows all RPI students to have access (using Central Authentication Service),  system from the website to notify the seller when contact the seller forms have been submitted, using Internet Message Access Protocol to send and receive confirmation codes to improve the security of the website, messaging system that allows buyers and sellers to get in contact.
+
+##Launch Instructions
+
+#Install and run on localhost:
+1. Clone the file to your localhost htdocs folder
+2. Go to phpMyAdmin and create a database called "rpifreeforsale"
+3. Go to the database and import the file "itemsTable.sql" from the rpifreeforsale folder
+4. Copy and paste http://localhost:8080/rpifreeforsale/login.html for Mac and use http://localhost/rpifreeforsale/login.html for Windows
+5. On the login page, type in "bob" for username and "123456" for password
+6. Now you will directed to the homepage of RPI Free & For Sale
