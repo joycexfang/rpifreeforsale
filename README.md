@@ -3,6 +3,9 @@
 ## Team 18
 Joyce Fang, Yuchen Luo, and Ilhwan Song
 
+## Link to GitHub Repository
+https://github.com/xiaolef/rpifreeforsale.git
+
 ## Problem
 Current administrators of the RPI Free & For Sale Facebook Group are not allowing access to RPI students. Although the RPI Facebook group Free and For Sale exists, it is no longer active anymore. This new website will enable RPI students to buy and sell items more easily and efficiently among other RPI students.
 
