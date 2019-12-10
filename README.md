@@ -35,6 +35,7 @@ In the future, we hope in include an actual login system that allows all RPI stu
 1. Clone the files to your localhost htdocs folder
 2. Go to phpMyAdmin and create a database called "rpifreeforsale"
 3. Go to the database and import the file "itemsTable.sql" from the rpifreeforsale folder
-4. Copy and paste http://localhost:8080/rpifreeforsale/login.html for Mac and use http://localhost/rpifreeforsale/login.html for Windows
-5. On the login page, type in "bob" for username and "123456" for password
-6. Now you will directed to the homepage of RPI Free & For Sale
+4. in the file includes/dbconnect.inc.php, change the password in line 10 (the 2nd 'root') to your own password.
+5. Copy and paste http://localhost:8080/rpifreeforsale/login.html for Mac and use http://localhost/rpifreeforsale/login.html for Windows
+6. On the login page, type in "bob" for username and "123456" for password
+7. Now you will directed to the homepage of RPI Free & For Sale
